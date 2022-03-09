@@ -5,69 +5,98 @@
         <title>Formulario</title>
     </head>
     <body>
-        <!--div de categorias-->
+        <!--inicio formulario-->
+        <form>
+            <!--div nome-->
+            <div>
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome" size="70" required>
+            </div>
+            <!-- fim div nome-->
 
-        <div>
-            <label for="categoria">Categorias</label>
-            <select name="categoria" id="categoria">
-                <option value="funcionario">Funcionário</option>
-                <option value="gerente" selected>Gerente</option>
-                <option value="administrador">Administrador</option> 
-            </select>
-        </div>
-        <!--fim div de categorias-->
+            <!--div email-->
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" size="70" required>
+            </div>
+            <!-- fim div email-->
 
-        <!--div de preferencias-->
-        <div>
-            <label>Selecione as cores de sua preferência: </label>
+            <!--div idade-->
+            <div>
+                <label for="idade">Idade</label>
+                <input type="number" name="idade" id="idade" required>
+            </div>
             <br/>
-            <input type="checkbox" name="blue" id="blue"/>
-            <label for="blue">Azul</label>
+            <!-- fim div idade-->
+
+             <!--div de categorias-->
+            <div>
+                <label for="categoria">Categorias</label>
+                <select name="categoria" id="categoria">
+                    <option value="funcionario">Funcionário</option>
+                    <option value="gerente" selected>Gerente</option>
+                    <option value="administrador">Administrador</option> 
+                </select>
+            </div>
             <br/>
-            <input type="checkbox" name="pink" id="pink"/>
-            <label for="pink">Rosa</label>
+            <!--fim div de categorias-->
+
+            <!--div de preferencias-->
+            <div>
+                <label>Selecione as cores de sua preferência: </label>
+                <br/>
+                <input type="checkbox" name="blue" id="blue"/>
+                <label for="blue">Azul</label>
+                <br/>
+                <input type="checkbox" name="pink" id="pink"/>
+                <label for="pink">Rosa</label>
+                <br/>
+                <input type="checkbox" name="black" id="black"/>
+                <label for="black">Preto</label>
+            </div>
             <br/>
-            <input type="checkbox" name="black" id="black"/>
-            <label for="black">Preto</label>
-        </div>
-        <!-- fim div de preferencias -->
+            <!-- fim div de preferencias -->
 
-        <!--div sexo-->
-        <div>
-            <label>Sexo: </label>
+            <!--div sexo-->
+            <div>
+                <label>Sexo: </label>
+                <br/>
+                <input type="radio" name="sexo" id="sexo_f" value="F"/>
+                <label for="sexo_f">Feminino</label>
+
+                <input type="radio" name="sexo" id="sexo_m" value="M"/>
+                <label for="sexo_m">Masculino</label>
+            </div>
             <br/>
-            <input type="radio" name="sexo" id="sexo_f" value="F"/>
-            <label for="sexo_f">Feminino</label>
+            <!--fim div sexo-->
 
-            <input type="radio" name="sexo" id="sexo_m" value="M"/>
-            <label for="sexo_m">Masculino</label>
-        </div>
-        <!--fim div sexo-->
-
-        <!--div de comentarios-->
-        <div>
-            <label for="comentarios">Comentários</label>
+            <!--div de comentarios-->
+            <div>
+                <label for="comentarios">Comentários</label>
+                <br/>
+                <textarea 
+                    name="comentarios" 
+                    id="comentarios"
+                    cols="50"
+                    rows="10"
+                    style="resize: none;">
+                </textarea>
+            </div>
             <br/>
-            <textarea 
-                name="comentarios" 
-                id="comentarios"
-                cols="50"
-                rows="10"
-                style="resize: none;">
-            </textarea>
-        </div>
-        <!--fim div de comentarios-->
+            <!--fim div de comentarios-->
 
-        <!--div de botão-->
-        <div>
-            <input type="submit" value="Enviar" /> <!--html_4-->
-        </div>
-        <!--fim div de botão-->
+            <!--div de botão-->
+            <div>
+                <input type="submit" value="Enviar" /> <!--html_4-->
+            </div>
+            <!--fim div de botão-->
 
-        <!-- div de botão-->
-        <div>
-            <button type="submit" name="btn_comprar" value="comprar">Comprar</button> <!--html_5-->
-        </div>
-        <!--fim div de botão-->
+            <!-- div de botão-->
+            <div>
+                <button type="submit" name="btn_comprar" value="comprar">Comprar</button> <!--html_5-->
+            </div>
+            <!--fim div de botão-->
+        </form>
+         <!--fim formulario-->
     </body>
 </html> 
