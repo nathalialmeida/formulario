@@ -5,6 +5,7 @@
         <title>Formulario</title>
     </head>
     <body>
+        <!--div de categorias-->
 
         <div>
             <label for="categoria">Categorias</label>
@@ -14,7 +15,9 @@
                 <option value="administrador">Administrador</option> 
             </select>
         </div>
+        <!--fim div de categorias-->
 
+        <!--div de preferencias-->
         <div>
             <label>Selecione as cores de sua preferência: </label>
             <br/>
@@ -27,15 +30,31 @@
             <input type="checkbox" name="black" id="black"/>
             <label for="black">Preto</label>
         </div>
+        <!-- fim div de preferencias -->
 
+        <!--div sexo-->
         <div>
             <label>Sexo: </label>
             <br/>
             <input type="radio" name="sexo" id="sexo_f" value="F"/>
             <label for="sexo_f">Feminino</label>
-            
+
             <input type="radio" name="sexo" id="sexo_m" value="M"/>
             <label for="sexo_m">Masculino</label>
+        </div>
+        <!--fim div sexo-->
+
+        <!--div de comentarios-->
+        <div>
+            <label for="comentarios">Comentários</label>
+            <br/>
+            <textarea 
+                name="comentarios" 
+                id="comentarios"
+                cols="50"
+                rows="10"
+                style="resize: none;">
+            </textarea>
         </div>
     </body>
 </html> 
